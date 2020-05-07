@@ -75,7 +75,7 @@ function getApplicationTraceRuleBreakdown(orgUuid, appId, environment){
 }
 
 function getApplicationTraceSeverityBreakdown(orgUuid, appId, environment){
-    var path = `${orgUuid}/applications/${appId}/breakdown/status`;
+    var path = `${orgUuid}/applications/${appId}/breakdown/trace/severity`;
     return this._get(path, {'environment': environment});
 }
 
